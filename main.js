@@ -1,8 +1,22 @@
 window.addEventListener("scroll", function () {
   var Header = document.querySelector("header");
   Header.classList.toggle("sticky",window.scrollY > 500);
+  Header.classList.toggle("sticky-bar",window.scrollY > 500);
 
 });
+
+window.addEventListener("scroll", function ()
+  {
+    var Header = document.querySelector("header");
+    if(document.body.scrollTop > 490 || document.documentElement.scrollTop > 490)
+    {
+      Header.style.position = "fixed"
+    }
+    else{
+      Header.style.position = "relative"
+    }
+  }
+);
 
 
 window.onscroll = function() {scrollFunction()};

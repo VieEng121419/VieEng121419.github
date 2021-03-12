@@ -47,10 +47,10 @@
                         <div class="collapse navbar-collapse nav-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item menu-item">
-                                    <a class="nav-link" aria-current="page" href="#">trang chủ</a>
+                                    <a class="nav-content" aria-current="page" href="#">trang chủ</a>
                                 </li>
                                 <li class="nav-item dropdown menu-item">
-                                    <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                    <a class="nav-content" href="#" id="navbarDropdown" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         sản phẩm
                                     </a>
@@ -61,24 +61,26 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item menu-item">
-                                    <a class="nav-link" href="#">tin tức</a>
+                                    <a class="nav-content" href="#">tin tức</a>
                                 </li>
                                 <li class="nav-item menu-item">
-                                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">liên
+                                    <a class="nav-content" href="#" tabindex="-1" aria-disabled="true">liên
                                         hệ</a>
                                 </li>
                             </ul>
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-warning btn-submit" type="submit"><i
-                                        class="fas fa-search"></i></button>
-                            </form>
-                            <div class="cart d-flex">
-                                <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/card.svg"
-                                    alt="">
-                                &nbsp;
-                                <span>0</span>
-                            </div>
+                            <div class="search-cart d-flex">
+                                <form class="form-search">
+                                    <input class="form-control-search form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-warning btn-submit" type="submit"><i
+                                            class="fas fa-search"></i></button>
+                                </form>
+                                <div class="cart">
+                                    <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/gallery/card.svg"
+                                        alt="">
+                                    &nbsp;
+                                    <span>0</span>
+                                </div>
+                            </div>                           
                         </div>
                     </div>
                 </nav>
@@ -89,7 +91,7 @@
     <section>
         <div class="banner">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner banner-height">
                     <div class="carousel-item active" data-bs-interval="10000">
                         <img src="https://preview.colorlib.com/theme/shionhouse/assets/img/hero/h1_hero1.png"
                             class="d-block w-100" alt="...">

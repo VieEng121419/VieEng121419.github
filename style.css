@@ -11,11 +11,20 @@ body{
 }
 
 header{
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     transition: .6s;
     z-index: 2;
+}
+
+.relative{
+    z-index: 1000;
+    width: 100%;
+    background: red;
+    height: 100%;
+    position: relative;
+    box-shadow:0 10px 15px r
 }
 
 header .main-menu ul li a{
@@ -23,11 +32,23 @@ header .main-menu ul li a{
 }
 
 .sticky{
-    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
-    box-shadow:0 10px 15px rgba(25,25,25,0.1);
     transition: 0.6s;
 }
 
+
+.sticky-bar{
+    left: 0;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-box-shadow: 0 10px 15px rgba(25,25,25,.1);
+    box-shadow: 0 10px 15px rgba(25,25,25,.1);
+    z-index: 9999;
+    -webkit-animation: 300ms ease-in-out 0s normal none 1 running ;
+    animation: 300ms ease-in-out 0s normal none 1 running ;
+    -webkit-box-shadow: 0 10px 15px rgba(25,25,25,.1);
+}
 
 .sticky .logo{
     visibility: hidden;
@@ -63,8 +84,8 @@ header .main-menu ul li a{
 
 .main-menu{
     background: #f8f9fa;
-    padding-left: 200px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 10px;
     height: 100%;
 }
 
@@ -73,22 +94,27 @@ header .main-menu nav ul li a{
     transition: 0.6s;
 }
 
+.nav-logo{
+    padding-right: 30px;
+}
+
 .nav-menu{
     max-height: 100%;
 }
 
 .menu-item{
-    padding-left: 20px;
+    padding-right: 42px;
     transition: .4s;
 }
 
-.menu-item .nav-link{
+.menu-item .nav-content{
     text-transform: uppercase;
-    padding: 30px;
     transition: .4s;
+    text-decoration: none;
+    color: #7e868d;
 }
 
-.menu-item .nav-link:hover{
+.menu-item .nav-content:hover{
     color: #fd7e14 !important;
 }
 
@@ -96,7 +122,12 @@ header .main-menu nav ul li a{
     color: #fff;
 }
 
+.form-search{
+    display: flex;
+}
+
 .cart{
+    display: flex;
     margin-left: 5px;
     color: #fff;
     background: #fd7e14;
@@ -109,7 +140,7 @@ header .main-menu nav ul li a{
 }
 
 .banner{
-    background: url();
+    position: relative;
 }
 
 .content-banner{
@@ -395,4 +426,182 @@ position: absolute;
 #back-top.show{
     opacity: 1;
     visibility: visible;
+}
+
+@media (max-width: 1600px)
+{
+    .content-banner{
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 67%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media (max-width: 1400px)
+{
+    .content-banner{
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 63%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .content-banner{
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 62%;
+        transform: translate(-50%, -50%);
+    }
+
+    .content-banner h1{
+        margin-bottom: 13px;
+        font-size: 60px;
+    }
+}
+
+@media (max-width:1100px)
+{
+    .logo a img {
+        width: 66%;
+        height: 66%;
+    }
+
+    .sticky .main-menu{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .sticky .main-menu .nav-logo img{
+        position: relative;
+        left:-42px;
+    }
+
+    .main-menu{
+        padding-left: 20px;
+    }
+
+    .menu-item{
+        padding-top: 17px;
+        padding-bottom: 15px;
+    }
+
+    .menu-item .nav-link{
+        text-transform: uppercase;
+        padding: 30px;
+        transition: .4s;
+    }
+
+    .menu-item .nav-content{
+        font-size: 13px;
+    }
+
+    .search-cart{
+        padding-bottom: 15px;
+    }
+
+    .content-banner{
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 57%;
+        transform: translate(-50%, -50%);
+    }
+    
+
+    .content-banner h1{
+        margin-bottom: 13px;
+        font-size: 60px;
+    }
+
+    h1 br {
+        display: block;
+        margin: -11px 0;
+     }
+}
+
+@media (max-width: 950px)
+{
+    .content-banner{
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 58%;
+        transform: translate(-50%, -50%);
+    }
+
+    .content-banner h1{
+        margin-bottom: 13px;
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 910px)
+{
+    .content-banner{
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .content-banner h1{
+        margin-bottom: 13px;
+        font-size: 48px;
+    }
+
+    h1 br {
+        display: block;
+        margin: -11px 0;
+     }
+}
+
+@media (max-width: 600px)
+{
+    .content-banner{
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .content-banner h1{
+        margin-bottom: 13px;
+        font-size: 35px;
+    }
+
+    h1 br {
+        display: block;
+        margin: -25px 0;
+     }
+}
+
+@media (max-width: 500px)
+{
+    .content-banner{
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .content-banner h1{
+        margin-bottom: 13px;
+        font-size: 25px;
+    }
+
+    h1 br {
+        display: block;
+        margin: -40px 0;
+     }
 }
