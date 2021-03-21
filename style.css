@@ -612,6 +612,13 @@ position: absolute;
 
 @media (max-width: 500px)
 {
+
+    .img-banner{
+        position: relative;
+        right: 269px;
+        width: 1000px;
+        height: 550px;
+    }
     .content-banner{
         height: 100%;
         position: absolute;
