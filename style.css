@@ -144,7 +144,7 @@ header .main-menu nav ul li a{
 }
 
 .img-banner{
-    width: 1600px;
+    width: 100%;
 }
 
 
@@ -595,18 +595,18 @@ position: absolute;
         height: 100%;
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 63%;
         transform: translate(-50%, -50%);
     }
 
     .content-banner h1{
         margin-bottom: 13px;
-        font-size: 35px;
+        font-size: 55px;
     }
 
     h1 br {
         display: block;
-        margin: -25px 0;
+        margin: -15px 0;
      }
 }
 
