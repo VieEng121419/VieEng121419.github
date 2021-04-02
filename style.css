@@ -617,6 +617,200 @@ position: absolute;
 
 /*---------------------------PRODUCT-DETAIL-END-----------------------------------------------*/
 
+/*---------------------------PRODUCT-DESCRIPTION-BEGIN------------------------------------------------*/
+.product-description{
+    margin-top: 10px;
+    padding-bottom: 120px;
+}
+
+.product-description .nav.nav-tabs{
+    border: none;
+    padding: 10px 0;
+}
+
+.product-description .nav.nav-tabs li{
+    margin-right: 7px;
+}
+
+.product-description .nav.nav-tabs li a{
+    line-height: 38px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    padding: 0 30px;
+    color: #2a2a2a;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.product-description .nav.nav-tabs li a.active{
+    background: #fd8f5f;
+    color: #fff !important;
+    border-color: #fd8f5f;
+}
+
+.product-description .tab-content{
+    padding-top: 30px;
+}
+
+.product-description .tab-content .collapse p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #646d77;
+}
+
+.review-item{
+    margin-bottom: 35px;
+}
+
+.review-item .media{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.review-item .media .d-flex{
+    padding-right: 15px;
+}
+
+.review-item .media .media-body{
+    align-self: center;
+}
+
+.review-item .media .media-body h4{
+    font-size: 14px;
+    color: #2a2a2a;
+    font-family: poppins,sans-serif;
+    margin-bottom: 8px;
+}
+
+.review-item .media .media-body h5{
+    font-family: poppins,sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #797979;
+}
+
+.review-item .media .media-body .reply-btn{
+    text-decoration: none;
+    border: 1px solid #e0e0e0;
+    padding: 0 28px;
+    display: inline-block;
+    line-height: 32px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-family: poppins,sans-serif;
+    color: #2a2a2a;
+    position: absolute;
+    right: 0;
+    top: 14px;
+    transition: all 0.3s ease;
+}
+
+.review-item .media .media-body .reply-btn:hover{
+    background: #fd8f5f;
+    border-color: #fd8f5f;
+    color: #fff;
+}
+
+.review-item.reply{
+    padding-left: 28px;
+}
+
+.review-box h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.review-box .contact-form{
+    margin-top: 15px;
+}
+
+.review-box .form-group{
+    margin-bottom: 0.8rem;
+}
+
+.review-box .form-control{
+    height: 50px;
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.review-box input.form-control, textarea.form-control::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #646d77;
+  }
+
+.text-right{
+    text-align: right !important;
+}
+
+.text-right .btn{
+    background: #FD8F5F;
+    color: #fff;
+    padding: 17px 44px;
+    text-transform: capitalize;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    transition: all .35s;
+    position: relative;
+    border-radius: 0;
+}
+
+.text-right .btn span{
+    position: relative;
+    z-index: 2;
+}
+
+.text-right .btn::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #e9855a;
+    transition: all .35s;
+}
+
+.text-right .btn:hover{
+    color: #fff
+}
+
+.text-right .btn:hover::after{
+    width: 100%;
+}
+
+/*---------------------------PRODUCT-DESCRIPTION-END------------------------------------------------*/
+/*---------------------------PRODUCT-RELATED-BEGIN------------------------------------------------*/
+.product-related{
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-related h4{
+    border-top: 1px dotted #d5d5d5;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 50px 0;
+}
+/*---------------------------PRODUCT-RELATED-END------------------------------------------------*/
+
 @media (max-width: 1600px)
 {
     .content-banner{
