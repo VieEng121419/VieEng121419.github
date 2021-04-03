@@ -437,7 +437,7 @@ position: absolute;
 .page-notification{
     background: #eff5f8;
     padding: 13px 0;
-    margin-bottom: 95px;
+    margin-bottom: 80px;
 }
 
 .breadcrumb{
@@ -810,6 +810,158 @@ position: absolute;
     padding: 50px 0;
 }
 /*---------------------------PRODUCT-RELATED-END------------------------------------------------*/
+/*---------------------------CART-BEGIN------------------------------------------------*/
+.cart-product{
+    margin-bottom: 80px;
+}
+
+.cart-product h1{
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 30px;
+}
+
+.table thead{
+    background: #eff5f8;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.table thead tr th{
+    /* border: 1px solid #d5d5d5 !important; */
+    border: none !important; 
+}
+
+.table tbody tr th,td {
+    /* border: 1px solid #d5d5d5 !important; */
+    text-align: center;
+    line-height: 130px;
+    font-size: 14px;
+}
+
+.table tbody td img{
+    width: 100px;
+    height: 130px;
+}
+
+.table tbody td input::-webkit-outer-spin-button,
+.table tbody td input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.table tbody td input[type=number]{
+    -moz-appearance: textfield;
+}
+
+.table tbody td input{
+    border:  1px solid #d5d5d5;
+    text-align: center;
+    width: 50px;
+    line-height: 30px !important;
+    border-left: none;
+    border-right: none;
+}
+
+.table tbody td .minus,.plus{
+    border:  1px solid #d5d5d5;
+    padding: 5.5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.table tbody td .minus:hover,.plus:hover{
+    background: #fd7e14;
+    color: #fff;
+}
+
+.table tbody td .minus i,.plus i{
+    font-size: 11px;
+}
+
+.table tbody td i.fa-trash-alt{
+    border-radius: 50%;
+    border: 1px solid #d5d5d5;
+    padding: 11px 12px;
+    background: #fff;
+    color: #000;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.table tbody td i.fa-trash-alt:hover{
+    background: #fd7e14;
+    color: #fff;
+    border: 1px solid #fd7e14;
+}
+
+/*---------------------------CART-END------------------------------------------------*/
+/*---------------------------COUPON-BEGIN------------------------------------------------*/
+.table tbody td.coupon-area{
+    text-align: left;
+    line-height: 40px;
+    border-right: 1px solid #fff !important;
+}
+
+.table tbody td input.coupon-text{
+    text-align: left;
+    border: 1px solid #d5d5d5;
+    height: 40px;
+    width: 200px;
+}
+
+.table tbody td .coupon-btn{
+    background: #fd7e14;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    padding: 0 10px;
+}
+
+.table tbody td.update-area{
+    text-align: right;
+    line-height: 40px;
+}
+
+.table tbody td.update-area .update-btn{
+    background: #fd7e14;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    padding: 0 10px;
+}
+/*---------------------------COUPON-END------------------------------------------------*/
+/*---------------------------CHECKOUT-BEGIN------------------------------------------------*/
+.checkout-area{
+    float: right;
+}
+
+.checkout-area table.checkout-table tr td{
+    text-align: right !important;
+    line-height: 40px !important;
+    padding: 0 100px;
+}
+
+.checkout-area table.checkout-table tr th{
+    line-height: 40px !important;
+    border-bottom: 1px solid #fff;
+    padding: 0 30px;
+    background: #eff5f8;
+}
+
+.checkout-area .btn-checkout{
+    background: #fd7e14;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 13px;
+    float: right;
+}
+/*---------------------------CHECKOUT-END------------------------------------------------*/
+
 
 @media (max-width: 1600px)
 {
