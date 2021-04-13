@@ -5,7 +5,6 @@ const quantity_input = document.querySelector('.quantity');
 const price_product = document.querySelector('.price');
 const subtotal = document.querySelector('.subtotal');
 const total = document.querySelector('.total');
-// const first_price =  price_product.innerText;
 //FUNCTIONS
 window.addEventListener("scroll", function () {
   var Header = document.querySelector("header");
