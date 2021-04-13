@@ -5,7 +5,7 @@ const quantity_input = document.querySelector('.quantity');
 const price_product = document.querySelector('.price');
 const subtotal = document.querySelector('.subtotal');
 const total = document.querySelector('.total');
-const first_price =  price_product.innerText;
+// const first_price =  price_product.innerText;
 //FUNCTIONS
 window.addEventListener("scroll", function () {
   var Header = document.querySelector("header");
@@ -43,32 +43,37 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-quantity_input.value = 1;
-var quantiy = parseInt(quantity_input.value);
-var priceValue = parseInt(price_product.innerText);
-var subtotalValue = parseInt(subtotal.innerText);
+// quantity_input.value = 1;
+// var quantiy = parseInt(quantity_input.value);
+// var priceValue = parseInt(price_product.innerText);
+// var subtotalValue = parseInt(subtotal.innerText);
 
-minus.addEventListener('click',function(){
-  if(quantiy > 1)
-  {
-    quantiy--;
-    subtotalValue = priceValue * quantiy;
-    price_product.innerText = priceValue.toString();
-    subtotal.innerText = subtotalValue.toString();
-    quantity_input.value = quantiy.toString();
-  }
-})
+// minus.addEventListener('click',function(){
+//   if(quantiy > 1)
+//   {
+//     quantiy--;
+//     subtotalValue = priceValue * quantiy;
+//     // price_product.innerText = priceValue.toString();
+//     subtotal.innerText = subtotalValue.toString();
+//     quantity_input.value = quantiy.toString();
+//   }
+// })
 
-plus.addEventListener('click', function(){
-  if(quantiy < 20)
-  {
-    quantiy++;
-    subtotalValue = priceValue * quantiy;
-    price_product.innerText = priceValue.toString();
-    subtotal.innerText = subtotalValue.toString();
-    quantity_input.value = quantiy.toString();
-  }
-})
+// plus.addEventListener('click', function(){
+//   if(quantiy < 20)
+//   {
+//     quantiy++;
+//     subtotalValue = priceValue * quantiy;
+//     // price_product.innerText = priceValue.toString();
+//     subtotal.innerText = subtotalValue.toString();
+//     quantity_input.value = quantiy.toString();
+//   }
+// })
+
+
+
+
+
 
 
 

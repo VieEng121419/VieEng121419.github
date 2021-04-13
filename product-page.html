@@ -130,15 +130,30 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-4">
                     <div data-aos="fade-up" data-aos-once="true" class="category-list">
-                        <div class="cat-1 cat-item">
-                            <a href="#">Thời Trang Nam</a>
-                        </div>
-                        <div class="cat-2 cat-item">
-                            <a href="#">Thời Trang Nữ</a>
-                        </div>
-                        <div class="cat-3 cat-item">
-                            <a href="#">Phụ Kiện</a>
-                        </div>
+                        <div class="cat-item"  >
+                            <button>Thời Trang Nam</button>       
+                            <div class="menu-dropdown" >
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>                    
+                        </div>                      
+                        <div class="cat-item">
+                            <button>Thời Trang Nữ</button>
+                            <div class="menu-dropdown" >
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>                       
+                        <div class="cat-item">
+                            <button>Phụ Kiện</button>
+                            <div class="menu-dropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>                      
                     </div>
                 </div>
                 <div class="col-xl-9 col-lg-9 col-md-8">
@@ -432,6 +447,15 @@
             offset: 200,
             duration: 1300,
         });
+        var btn = document.getElementsByClassName('cat-item');
+        var content = document.getElementsByClassName('cat-dropdown');
+        var length = btn.length;
+        console.log(length);
+        for (var i = 0; i < btn.length; i++) {
+            btn[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+            });
+        }
     </script>
 </body>
 

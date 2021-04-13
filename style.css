@@ -481,24 +481,74 @@ position: absolute;
 }
 
 .cat-item{
-    width: 100%;
-    height: 45px;
-    background: #fff;
-    border-radius: 5px;
-    padding: 11px 19px 11px 18px;
-    color: #616875;
-    line-height: 20px;
-    border: 1px solid #ededed;
-    margin-bottom: 20px;
-    cursor: pointer;
+    position: relative;
 }
 
-.cat-item a {
+.cat-item button {
+    background: #fff;
+    border-radius: 5px;
+    color: #616875;
+    border: 1px solid #ededed;
+    cursor: pointer;
+    padding: 11px 19px 11px 18px;
+    width: 100%;
+    height: 45px;
     font-size: 14px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    color: #616875;
     line-height: 20px;
+    text-align: left;
+    margin-bottom: 3px;
+    transition: all 0.2s ease;
+}
+
+.cat-item button:hover{
+    border: 1px solid #f6f6f6;;
+    transition: all .3s linear;  
+}
+
+.cat-item .menu-dropdown{
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    border: 1px solid #ededed;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    transition: all 0.3s linear;
+}
+
+.cat-item.active .menu-dropdown{
+    border: 1px solid #ededed;
+    height: auto;
+    opacity: 1;
+    transition: all 0.3s linear;
+    z-index: 1;
+}
+.cat-item .menu-dropdown .dropdown-item{
+    display: none;
+    opacity: 0;
+    height: 0;
+    background: #ffffff;
+    color: #616875;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    transition: all .1s linear;
+}
+
+.cat-item.active .menu-dropdown .dropdown-item:hover{
+    background: #f6f6f6;
+}
+
+.cat-item.active .menu-dropdown .dropdown-item{
+    display: block;
+    height: 45px;
+    padding: 10px;
+    transition: all 0.1s linear;
+    opacity: 1;
+    background: #ffffff;
+    color: #616875;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 /*---------------------------PRODUCT-PAGE-END------------------------------------------*/
 
