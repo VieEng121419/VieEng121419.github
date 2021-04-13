@@ -519,7 +519,7 @@ position: absolute;
 
 .cat-item.active .menu-dropdown{
     border: 1px solid #ededed;
-    height: auto;
+    height: 137px;
     opacity: 1;
     transition: all 0.3s linear;
     z-index: 1;
